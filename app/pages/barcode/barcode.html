@@ -10,7 +10,46 @@
 
 <ion-content padding class="barcode">
 
-    <h2>Barcode Scanner</h2>    
+    <h2>Barcode Scanner.</h2>
+
+    <ion-row>
+        <ion-col width-80>
+            <p>Try to scan a barcode and see what happens!</p>
+        </ion-col>
+        <ion-col width-20>
+            <button round (click)="scanBarcode()">
+                <ion-icon name="md-qr-scanner"></ion-icon>
+            </button>
+        </ion-col>
+    </ion-row>
+
+    <ion-card *ngIf="!error && barcodeTxt">
+        <ion-card-content>
+            <ion-card-title>
+                Barcode found!
+            </ion-card-title>
+            <p>
+                It seems that you're trying to visit: {{barcodeTxt}}
+            </p>
+            <p>
+                Would you like to open a browser?
+            </p>
+            <ion-row>
+                <ion-col>
+                    <button small (click)="visitBarcode()">Yes, Please!</button>
+                </ion-col>
+                <ion-col>
+                    <button secondary small (click)="clearBarcode()">No, Clear this!</button>
+                </ion-col>
+            </ion-row>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-grid *ngIf="error">
+        <ion-row danger>
+            Ops! an error occurred scanning your barcode. Try again, please!
+        </ion-row>
+    </ion-grid>
 
 </ion-content>
 
