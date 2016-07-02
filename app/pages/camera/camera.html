@@ -9,6 +9,21 @@
 
 <ion-content padding class="camera">
 
-    <h2>Camera</h2>
+    <h2>Camera.</h2>
+
+    <ion-row>
+        <ion-col width-80>
+            <p>Try to make a photo!</p>
+        </ion-col>
+        <ion-col width-20>
+            <button round (click)="photo()">
+                <ion-icon name="md-camera"></ion-icon>
+            </button>
+        </ion-col>
+    </ion-row>
+
+    <ion-card *ngIf="image">
+        <img [src]="image"/>
+    </ion-card>
 
 </ion-content>
