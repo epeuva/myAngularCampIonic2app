@@ -11,4 +11,25 @@
 
     <h2>Share that you're at Angular Camp!</h2>
 
+    <ion-item>
+        <ion-label floating>Message to share</ion-label>
+        <ion-textarea [(ngModel)]="shareMsg"></ion-textarea>
+    </ion-item>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <button (click)="shareViaTwitter()">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </button>
+                <button (click)="shareViaFacebook()">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </button>
+                <button (click)="share()">
+                    <ion-icon name="md-share"></ion-icon>
+                </button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
 </ion-content>
