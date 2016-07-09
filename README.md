@@ -1,4 +1,8 @@
-# README #
+## My Angular Camp Ionic2 (first) app
+
+[![Build Status][travis-badge]][travis-badge-url]
+[![Dependency Status][david-badge]][david-badge-url]
+[![devDependency Status][david-dev-badge]][david-dev-badge-url]
 
 ### Table of Contents
 
@@ -10,10 +14,11 @@
 * npm install -g cordova
 * For iOS: http://ionicframework.com/docs/v2/resources/what-is/#xcode
 
-### Create first app and serve it
+### Create first app, install project dependencies and serve it
 
 * ionic start myAngularCampIonic2app --v2
 * cd myAngularCampIonic2app
+* npm install
 
 ### Add platforms
 
@@ -59,3 +64,15 @@ Test on device
 
 * https://github.com/driftyco/ionic-conference-app/
 * http://ionicframework.com/docs/v2/
+
+## License
+
+MIT
+
+
+[travis-badge]: https://travis-ci.org/epeuva/myAngularCampIonic2app.svg?branch=master
+[travis-badge-url]: https://travis-ci.org/epeuva/myAngularCampIonic2app
+[david-badge]: https://david-dm.org/epeuva/myAngularCampIonic2app.svg
+[david-badge-url]: https://david-dm.org/epeuva/myAngularCampIonic2app
+[david-dev-badge]: https://david-dm.org/epeuva/myAngularCampIonic2app/dev-status.svg
+[david-dev-badge-url]: https://david-dm.org/epeuva/myAngularCampIonic2app#info=devDependencies
